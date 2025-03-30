@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/norse-bold/Norse-Bold.woff2') format('woff2'),
+        url('fonts/norse-bold/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 *, *::before, *::after {
     box-sizing: border-box; 
     margin: 0;
@@ -24,10 +33,65 @@ body {
 
     background-image: url(background-img.avif);
     background-size: cover;
+    background-position: center;
+
 
     color: white;
 }
 
+#left-container-header {
+    align-self: stretch;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22vh 0 0 0;
+}
+
+#left-container-logo {
+    background-image: url(odin-lined.png);
+    background-size: cover;
+    width: 76px;
+    height: 100.6px;
+}
+
+#left-container-title {
+    opacity: 100%;
+    font-family: "Norse";
+    font-size: 80px;
+    padding: 18px 0 0 5px;
+}
+
 #left-container-footer {
     margin: 10px;
+    font-size: 12px;
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#top-right-container, #bot-right-container {
+    height: 37vh;
+    background-color: rgb(238, 244, 246);
+}
+
+#mid-right-container {
+    height: 26vh;
+}
+
+#top-right-container {
+    font-size: 20px;
+}
+
+#top-right-container-description {
+    padding: 135px 0 20px 30px;
+    max-width: 55ch;
+}
+
+#top-right-container > div:last-child {
+    padding: 0 0 50px 30px;
 }
