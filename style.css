@@ -24,7 +24,7 @@ body {
 }
 
 #left-container {
-    flex: 1 1 50%;
+    flex: 1 1 30vh;
     display: flex;
     flex-direction: column;
 
@@ -94,4 +94,13 @@ body {
 
 #top-right-container > div:last-child {
     padding: 0 0 50px 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    display: flex;
 }
