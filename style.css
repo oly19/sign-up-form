@@ -101,16 +101,19 @@ body {
 #mid-right-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     padding: 15px 0 25px 30px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.1); /* soft gray shadow */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
 
-
+#mid-right-container-title {
+    font-size: 20px;
+}
 
 form {
     display: flex;
     gap: 50px;
+    font-size: 13px;
 }
 
 form div {
@@ -121,6 +124,23 @@ form div {
 form > div {
     gap: 20px;
 }
+
+input {
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    height: 30px;
+    width: 250px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(150, 187, 218);
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
 
 #bot-right-container > button {
     margin: 30px 0 0 30px;
@@ -137,7 +157,3 @@ form > div {
 #button-description {
     margin: 30px;
 }
-
-
-
-
