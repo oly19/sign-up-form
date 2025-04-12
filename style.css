@@ -75,12 +75,12 @@ body {
 }
 
 #top-right-container, #bot-right-container {
-    height: 37vh;
+    height: 34vh;
     background-color: rgb(238, 244, 246);
 }
 
 #mid-right-container {
-    height: 26vh;
+    height: 32vh;
 }
 
 #top-right-container {
@@ -96,11 +96,41 @@ body {
     padding: 0 0 50px 30px;
 }
 
+#mid-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0px 25px 25px;
+}
+
 form {
+    display: flex;
+    gap: 50px;
+}
+
+form div {
     display: flex;
     flex-direction: column;
 }
 
 form > div {
-    display: flex;
+    gap: 20px;
 }
+
+#bot-right-container > button {
+    margin: 30px 0px 0px 30px;
+    width: 160px;
+    height: 35px;
+    color: white;
+    background-color: rgb(22, 129, 94);
+    border-color: rgb(22, 129, 94);
+    border-radius: 5px;
+}
+
+#button-description {
+    margin: 30px;
+}
+
+
+
+
